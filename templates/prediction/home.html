@@ -1,0 +1,19 @@
+{% extends 'prediction/base.html' %}
+
+{% block title %}Home - Waterborne Disease Prediction{% endblock %}
+
+{% block content %}
+<div class="container text-center d-flex flex-column align-items-center justify-content-center" style="height: 80vh;">
+    <h1 class="mt-4">Welcome to the Waterborne Disease Prediction System</h1>
+    <p class="lead">Predict waterborne disease risks based on water quality parameters.</p>
+
+    <div class="card shadow-lg mt-3" style="width: 400px;">
+        <div class="card-body">
+            <h5 class="card-title">Disease Prediction</h5>
+            <p class="card-text">Predict the risk of waterborne diseases based on pH, turbidity, chlorine level, and bacteria count.</p>
+            <a href="/prediction/predict" class="btn btn-primary">Go to Prediction</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

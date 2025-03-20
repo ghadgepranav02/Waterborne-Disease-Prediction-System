@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Quality Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { color: #007bff; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h2>Water Quality Report</h2>
+    <p><strong>Prediction:</strong> {{ prediction }}</p>
+    <p><strong>Explanation:</strong> {{ explanation }}</p>
+    
+    <h3>Water Quality Parameters:</h3>
+    <table>
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>pH Level</td><td>{{ ph }}</td></tr>
+        <tr><td>Turbidity</td><td>{{ turbidity }}</td></tr>
+        <tr><td>Chlorine Level</td><td>{{ chlorine }}</td></tr>
+        <tr><td>Bacteria Count</td><td>{{ bacteria }}</td></tr>
+    </table>
+</body>
+</html>
