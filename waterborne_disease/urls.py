@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('prediction/', include('prediction.urls')),
     path('', views.home, name='home'),  # Add this line for homepage
+    path("", include("prediction.urls")),
 ]

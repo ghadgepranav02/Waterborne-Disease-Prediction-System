@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial; }
+        h2 { color: #2c3e50; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        td, th { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h2>Water Quality Report</h2>
+    <table>
+        <tr><th>Parameter</th><th>Value</th><th>Safe Range</th></tr>
+        <tr><td>pH Level</td><td>{{ ph_level }}</td><td>6.5 - 8.5</td></tr>
+        <tr><td>Turbidity (NTU)</td><td>{{ turbidity }}</td><td>0 - 5 NTU</td></tr>
+        <tr><td>Chlorine Level (mg/L)</td><td>{{ chlorine_level }}</td><td>0.2 - 1.0 mg/L</td></tr>
+        <tr><td>Bacteria Count (CFU/mL)</td><td>{{ bacteria_count }}</td><td>&lt; 500 CFU/mL</td></tr>
+    </table>
+
+    <p><strong>Risk Level:</strong> {{ prediction }}</p>
+    <p>{{ explanation }}</p>
+</body>
+</html>
