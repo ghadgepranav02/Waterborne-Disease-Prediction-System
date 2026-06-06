@@ -138,6 +138,3 @@ This saves a new `prediction_model.pkl` that the Django app will automatically u
 
 ---
 
-
-**Your Name**  
-[GitHub](https://github.com/your-username) • [LinkedIn](https://linkedin.com/in/your-profile)
